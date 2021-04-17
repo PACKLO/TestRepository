@@ -1,8 +1,8 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
-int main()
+int main1()
 {
 	setlocale(LC_ALL, "Russian");
 	for (int i = 0; i < 10; i++)
@@ -10,13 +10,11 @@ int main()
 		for (int j = 0; j < 10; j++)
 		{
 			if (i + j >= 9 && i >= j)
-				cout << "|===|";
+				cout << "|!!!!!!|";
 			else
 				cout << "    ";
 		}
 		cout << endl;
 	}
-
 	return 0;
 }
-
