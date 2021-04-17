@@ -1,5 +1,5 @@
 ﻿  WorkingFile.cpp
-C:\Users\К108\source\repos\TestRepository\ForRepository\WorkingFile.cpp(28,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К108\source\repos\TestRepository\ForRepository\WorkingFile.cpp(68,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К108\source\repos\TestRepository\ForRepository\WorkingFile.cpp(109,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К108\source\repos\TestRepository\ForRepository\WorkingFile.cpp(29,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К108\source\repos\TestRepository\ForRepository\WorkingFile.cpp(69,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К108\source\repos\TestRepository\ForRepository\WorkingFile.cpp(110,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   ForRepository.vcxproj -> C:\Users\К108\Source\Repos\TestRepository\x64\Debug\MainProgramm.exe

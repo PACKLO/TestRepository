@@ -181,7 +181,7 @@ int main()
 		break;
 
 	default:
-		cout << "Неверно! Прочтите README в репозитории!";
+		cout << "Такого задания не существует! Прочтите README в репозитории! (https://github.com/PACKLO/Work)";
 		break;
 	}
 	return 0;
