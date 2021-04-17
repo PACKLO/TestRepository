@@ -139,8 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ForRepository.cpp" />
-    <ClCompile Include="AnotherOne.cpp" />
+    <ClCompile Include="Roof.cpp" />
+    <ClCompile Include="ClassWork.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
