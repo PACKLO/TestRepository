@@ -40,6 +40,27 @@ int main()
 					wrongAnsws += 1;
 				}
 			}
+			switch (rightAnsws)
+			{
+			case 0:
+				cout << "Невероятно плохо! Ты не дал ни одного правльного ответа!";
+				break;
+			case 1:
+				cout << "Очень Плохо! Оценка - " << rightAnsws;
+				break;
+			case 2:
+				cout << "Плохо! Оценка - " << rightAnsws;
+				break;
+			case 3:
+				cout << "Так себе. Оценка - " << rightAnsws;
+				break;
+			case 4:
+				cout << "Неплохо! Оценка - " << rightAnsws;
+				break;
+			case 5:
+				cout << "Отлично! Оценка - " << rightAnsws;
+				break;
+			}
 			break;
 		case 2:
 			for (int i = 0; i < 5; i++)
@@ -58,6 +79,27 @@ int main()
 				{
 					wrongAnsws += 1;
 				}
+			}
+			switch (rightAnsws)
+			{
+			case 0:
+				cout << "Невероятно плохо! Ты не дал ни одного правльного ответа!";
+				break;
+			case 1:
+				cout << "Очень Плохо! Оценка - " << rightAnsws;
+				break;
+			case 2:
+				cout << "Плохо! Оценка - " << rightAnsws;
+				break;
+			case 3:
+				cout << "Так себе. Оценка - " << rightAnsws;
+				break;
+			case 4:
+				cout << "Неплохо! Оценка - " << rightAnsws;
+				break;
+			case 5:
+				cout << "Отлично! Оценка - " << rightAnsws;
+				break;
 			}
 		
 			break;
@@ -79,28 +121,28 @@ int main()
 					wrongAnsws += 1;
 				}
 			}
+			switch (rightAnsws)
+			{
+			case 0:
+				cout << "Невероятно плохо! Ты не дал ни одного правльного ответа!";
+				break;
+			case 1:
+				cout << "Очень Плохо! Оценка - " << rightAnsws;
+				break;
+			case 2:
+				cout << "Плохо! Оценка - " << rightAnsws;
+				break;
+			case 3:
+				cout << "Так себе. Оценка - " << rightAnsws;
+				break;
+			case 4:
+				cout << "Неплохо! Оценка - " << rightAnsws;
+				break;
+			case 5:
+				cout << "Отлично! Оценка - " << rightAnsws;
+				break;
+			}
 			break;
-		switch (rightAnsws)
-		{
-		case 0:
-			cout << "Невероятно плохо! Ты не дал ни одного правльного ответа!";
-			break;
-		case 1:
-			cout << "Очень Плохо! Оценка - " << rightAnsws;
-			break;
-		case 2:
-			cout << "Плохо! Оценка - " << rightAnsws;
-			break;
-		case 3:
-			cout << "Так себе. Оценка - " << rightAnsws;
-			break;
-		case 4:
-			cout << "Неплохо! Оценка - " << rightAnsws;
-			break;
-		case 5:
-			cout << "Отлично! Оценка - " << rightAnsws;
-			break;
-		}
 
 		/*
 		srand(time(NULL));
