@@ -33,17 +33,73 @@ int main()
 				cin >> userInput1;
 				if (userInput1 == composition)
 				{
-					cout << "Верно!" << endl;
 					rightAnsws += 1;
 				}
 				else
 				{
-					cout << "Неверно!" << endl;
 					wrongAnsws += 1;
 				}
 			}
-			cout << "Неверных ответов: " << wrongAnsws << endl;
-			cout << "Верных ответов: " << rightAnsws << endl;
+			break;
+		case 2:
+			for (int i = 0; i < 5; i++)
+			{
+				srand(time(NULL));
+				fNum = rand() % 50 + 1;
+				sNum = rand() % 50 + 1;
+				composition = fNum * sNum;
+				cout << fNum << " * " << sNum << " = ";
+				cin >> userInput1;
+				if (userInput1 == composition)
+				{
+					rightAnsws += 1;
+				}
+				else
+				{
+					wrongAnsws += 1;
+				}
+			}
+		
+			break;
+		case 3:
+			for (int i = 0; i < 5; i++)
+			{
+				srand(time(NULL));
+				fNum = rand() % 100 + 1;
+				sNum = rand() % 100 + 1;
+				composition = fNum * sNum;
+				cout << fNum << " * " << sNum << " = ";
+				cin >> userInput1;
+				if (userInput1 == composition)
+				{
+					rightAnsws += 1;
+				}
+				else
+				{
+					wrongAnsws += 1;
+				}
+			}
+			break;
+		switch (rightAnsws)
+		{
+		case 0:
+			cout << "Невероятно плохо! Ты не дал ни одного правльного ответа!";
+			break;
+		case 1:
+			cout << "Очень Плохо! Оценка - " << rightAnsws;
+			break;
+		case 2:
+			cout << "Плохо! Оценка - " << rightAnsws;
+			break;
+		case 3:
+			cout << "Так себе. Оценка - " << rightAnsws;
+			break;
+		case 4:
+			cout << "Неплохо! Оценка - " << rightAnsws;
+			break;
+		case 5:
+			cout << "Отлично! Оценка - " << rightAnsws;
+			break;
 		}
 
 		/*
@@ -55,7 +111,7 @@ int main()
 		cout << fNum << endl;
 		cout << sNum << endl;
 		*/
-
+		}
 		break;
 	case 2: // Пользователь вводит две грацицы диапазона и число. Если число не попадает в диапазон, программа просит пользователя повторно ввести число и так до тех пор пока он не введет число правльно.
 		int diapStart, diapEnd, userInput, diffirence;
