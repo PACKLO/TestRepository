@@ -8,7 +8,8 @@ int main()
 
 	// Переменные для case 1.
 	int fNum, sNum, composition, userInput1, possibility, rightAnsws = 0, wrongAnsws = 0;
-
+	// Переменные для case 2.
+	int diapStart, diapEnd, userInput, diffirence;
 
 
 	int Work;
@@ -156,7 +157,6 @@ int main()
 		}
 		break;
 	case 2: // Пользователь вводит две грацицы диапазона и число. Если число не попадает в диапазон, программа просит пользователя повторно ввести число и так до тех пор пока он не введет число правльно.
-		int diapStart, diapEnd, userInput, diffirence;
 		cout << "Введите начало границы диапазона: ";
 		cin >> diapStart;
 		cout << "Введите конец границы диапазона: ";
