@@ -5,18 +5,48 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+
+	// Переменные для case 1.
+	int fNum, sNum, composition, userInput1, possibility, rightAnsws = 0, wrongAnsws = 0;
+
+
+
 	int Work;
 	cout << "Какое задание хотите посмотреть?: ";
 	cin >> Work;
 	switch (Work)
 	{
 	case 1: // Проверка пользователя на таблицу умножения. Программа выводит на экран два числа, пользователь должен ввести их произведение. Имеется несколько уровней сложности. Выводит оценку знаний.
-		int fNum, sNum, composition, userInput1, possibility;
-
 		cout << "Выберите уровень сложности от 1 до 3: ";
 		cin >> possibility;
 
+		switch (possibility)
+		{
+		case 1:
+			for (int i = 0; i < 5; i++)
+			{
+				srand(time(NULL));
+				fNum = rand() % 10 + 1;
+				sNum = rand() % 10 + 1;
+				composition = fNum * sNum;
+				cout << fNum << " * " << sNum << " = ";
+				cin >> userInput1;
+				if (userInput1 == composition)
+				{
+					cout << "Верно!" << endl;
+					rightAnsws += 1;
+				}
+				else
+				{
+					cout << "Неверно!" << endl;
+					wrongAnsws += 1;
+				}
+			}
+			cout << "Неверных ответов: " << wrongAnsws << endl;
+			cout << "Верных ответов: " << rightAnsws << endl;
+		}
 
+		/*
 		srand(time(NULL));
 		fNum = rand() % 100 + 1;
 		sNum = rand() % 100 + 1;
@@ -24,7 +54,7 @@ int main()
 		cout << composition << endl;
 		cout << fNum << endl;
 		cout << sNum << endl;
-
+		*/
 
 		break;
 	case 2: // Пользователь вводит две грацицы диапазона и число. Если число не попадает в диапазон, программа просит пользователя повторно ввести число и так до тех пор пока он не введет число правльно.
