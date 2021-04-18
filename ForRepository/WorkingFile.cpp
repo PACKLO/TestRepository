@@ -5,11 +5,17 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-
+	// Переменные классных работ:
 	// Переменные для case 1.
 	int fNum, sNum, composition, userInput1, possibility, rightAnsws = 0, wrongAnsws = 0;
 	// Переменные для case 2.
 	int diapStart, diapEnd, userInput, diffirence;
+
+	// Переменные домашних работ:
+	// Переменные для case 1000.
+	float r1, r2, r3, r0, prer0;
+	// Переменные для case 1001.
+	float S, pi = 3.14, R, L;
 
 
 	int Work;
@@ -179,7 +185,28 @@ int main()
 
 
 		break;
+	case 1000: // Заданы три сопротивлении R1, R2, R3. Вычислить значение сопротивления R0 по формуле: 1/R0 = 1 / R1 + 1 / R2 + 1 / R3. Контрольный пример : R1 = 2, R2 = 4, R3 = 8, R0 = 1.142857.
+		cout << "Введите R1: ";
+		cin >> r1;
+		cout << "Введите R2: ";
+		cin >> r2;
+		cout << "Введите R3: ";
+		cin >> r3;
+		prer0 = (1 / r1) + (1 / r2) + (1 / r3);
+		r0 = 1 / prer0;
+		cout << "R0 = " << r0 << endl;
 
+
+		break;
+	case 1001: // По заданной длине окружности найти площадь круга по формуле S = pi*R2, радиус вычислить из формулы длины окружности : L = 2 * pi * R.
+		cout << "Введите L: ";
+		cin >> L;
+		R = L / (2 * pi);
+		S = pi * R * R;
+		cout << "S = " << S;
+
+
+		break;
 	default:
 		cout << "Такого задания не существует! Прочтите README в репозитории! (https://github.com/PACKLO/Work)";
 		break;
