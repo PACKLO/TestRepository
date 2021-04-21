@@ -18,7 +18,7 @@ int main()
 	const int row = 5;
 	const int col = 5;
 	int mr[row][col];
-	int k = 0;
+	int k = 0, babaika = 0;
 	// Переменные домашних работ:
 	// Переменные для case 1000.
 	float r1, r2, r3, r0, prer0;
@@ -235,6 +235,28 @@ int main()
 				}
 			}
 		}
+		for (int i = 0; i < row; i++)
+		{
+			for (int j = 0; j < col; j++)
+			{
+				if (babaika < mr[i][j])
+				{
+					babaika = mr[i][j];
+				}
+			}
+		}
+		cout << "Максимальное: "<< babaika << "\n";
+		for (int i = 0; i < row; i++)
+		{
+			for (int j = 0; j < col; j++)
+			{
+				if (babaika > mr[i][j])
+				{
+					babaika = mr[i][j];
+				}
+			}
+		}
+		cout << "Минимальное: "<< babaika;
 		break;
 	case 1000: // Заданы три сопротивлении R1, R2, R3. Вычислить значение сопротивления R0 по формуле: 1/R0 = 1 / R1 + 1 / R2 + 1 / R3. Контрольный пример : R1 = 2, R2 = 4, R3 = 8, R0 = 1.142857.
 		cout << "Введите R1: ";
