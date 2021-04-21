@@ -48,6 +48,7 @@ int main()
 	const int col = 5;
 	int mr[row][col];
 	int k = 0, babaika = 0;
+
 	// Переменные домашних работ:
 	// Переменные для case 1000.
 	float r1, r2, r3, r0, prer0;
