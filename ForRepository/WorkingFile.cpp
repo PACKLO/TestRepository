@@ -13,7 +13,12 @@ int main()
 	int diapStart, diapEnd, userInput, diffirence;
 	// Переменные для case 3.
 	int kek;
-
+	// Переменные для case 4.
+	// Переменные для case 5.
+	const int row = 5;
+	const int col = 5;
+	int mr[row][col];
+	int k = 0;
 	// Переменные домашних работ:
 	// Переменные для case 1000.
 	float r1, r2, r3, r0, prer0;
@@ -205,13 +210,30 @@ int main()
 		kek = rand();
 		cout << kek << endl;
 		break;
-	case 4:
-		int spisok[10];
+	case 4: // Заполнение массива рандомными числами циклом for.
+		int spisok[11];
 		srand(time(NULL));
 		for (int i = 0 ; i < 11; i++)
 		{
 			spisok[i] = rand() % 100;
 			cout << spisok[i] << endl;
+		}
+		break;
+	case 5: // Матрица из рандомных чисел.
+		srand(time(NULL));
+		for ( int i = 0; i < row; i++)
+		{
+			for (int j = 0; j < col; j++)
+			{
+				k++;
+				mr[i][j] = rand() % 100;
+				cout << mr[i][j] << " ";
+				if (k == 5)
+				{
+					cout << "\n";
+					k = 0;
+				}
+			}
 		}
 		break;
 	case 1000: // Заданы три сопротивлении R1, R2, R3. Вычислить значение сопротивления R0 по формуле: 1/R0 = 1 / R1 + 1 / R2 + 1 / R3. Контрольный пример : R1 = 2, R2 = 4, R3 = 8, R0 = 1.142857.
