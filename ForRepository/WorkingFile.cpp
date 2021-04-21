@@ -58,7 +58,7 @@ int main()
 	// Переменные для case 1003.
 	int s, sec, min, hour;
 	// Переменные для case 1004.
-
+	// -
 	// Переменные для case 1005.
 	double timee, speed, distance, min2, sec2, time_2;
 	// Переменные для case 1006.
