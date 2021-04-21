@@ -2,6 +2,35 @@
 #include <stdlib.h>
 #include <time.h>
 using namespace std;
+// case 6 function.
+void MakeASquare(string symbol,int row, int colu)
+{
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < colu; j++)
+		{
+			cout << symbol;
+		}
+		cout << "\n";
+	}
+}
+// case 7 function
+int result = 0;
+void CubeIt(int number)
+{
+	result = number * number * number;
+	cout << result;
+}
+// case 8 function
+int preresult, result2, x = 1;
+void FactorialIt(int number)
+{
+	for (int i = 2; i <= number; i++)
+	{
+		x = x * i;
+	}
+	cout << x;
+}
 
 int main()
 {
@@ -219,7 +248,7 @@ int main()
 			cout << spisok[i] << endl;
 		}
 		break;
-	case 5: // Матрица из рандомных чисел.
+	case 5: // Матрица из рандомных чисел а также ее минимальное и максимальное число.
 		srand(time(NULL));
 		for ( int i = 0; i < row; i++)
 		{
@@ -257,6 +286,15 @@ int main()
 			}
 		}
 		cout << "Минимальное: "<< babaika;
+		break;
+	case 6: // Функция которая создает квадрат.
+		MakeASquare("o", 5, 8);
+		break;
+	case 7: // Функция которая возводит заданное число в куб.
+		CubeIt(5);
+		break;
+	case 8: // Функция которая находит факториал числа.
+		FactorialIt(4);
 		break;
 	case 1000: // Заданы три сопротивлении R1, R2, R3. Вычислить значение сопротивления R0 по формуле: 1/R0 = 1 / R1 + 1 / R2 + 1 / R3. Контрольный пример : R1 = 2, R2 = 4, R3 = 8, R0 = 1.142857.
 		cout << "Введите R1: ";

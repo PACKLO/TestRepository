@@ -1,10 +1,10 @@
 ﻿  WorkingFile.cpp
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(26,20): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(52,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(92,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(133,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(206,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(209,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(215,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(223,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(55,20): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(81,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(121,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(162,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(235,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(238,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(244,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\К12\source\repos\Work\ForRepository\WorkingFile.cpp(252,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   ForRepository.vcxproj -> C:\Users\К12\Source\Repos\Work\x64\Debug\MainProgramm.exe
