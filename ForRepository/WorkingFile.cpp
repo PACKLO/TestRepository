@@ -205,6 +205,15 @@ int main()
 		kek = rand();
 		cout << kek << endl;
 		break;
+	case 4:
+		int spisok[10];
+		srand(time(NULL));
+		for (int i = 0 ; i < 11; i++)
+		{
+			spisok[i] = rand() % 100;
+			cout << spisok[i] << endl;
+		}
+		break;
 	case 1000: // Заданы три сопротивлении R1, R2, R3. Вычислить значение сопротивления R0 по формуле: 1/R0 = 1 / R1 + 1 / R2 + 1 / R3. Контрольный пример : R1 = 2, R2 = 4, R3 = 8, R0 = 1.142857.
 		cout << "Введите R1: ";
 		cin >> r1;
