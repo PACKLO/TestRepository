@@ -1,5 +1,6 @@
 ﻿#include <iostream>
-
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
 
 int main()
@@ -10,6 +11,8 @@ int main()
 	int fNum, sNum, composition, userInput1, possibility, rightAnsws = 0, wrongAnsws = 0;
 	// Переменные для case 2.
 	int diapStart, diapEnd, userInput, diffirence;
+	// Переменные для case 3.
+	int kek;
 
 	// Переменные домашних работ:
 	// Переменные для case 1000.
@@ -193,6 +196,14 @@ int main()
 		}
 
 
+		break;
+	case 3: // Рандом циферки.
+		srand(time(NULL));
+		kek = rand();
+		cout << kek << endl;
+		srand(time(NULL));
+		kek = rand();
+		cout << kek << endl;
 		break;
 	case 1000: // Заданы три сопротивлении R1, R2, R3. Вычислить значение сопротивления R0 по формуле: 1/R0 = 1 / R1 + 1 / R2 + 1 / R3. Контрольный пример : R1 = 2, R2 = 4, R3 = 8, R0 = 1.142857.
 		cout << "Введите R1: ";
