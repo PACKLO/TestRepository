@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 using namespace std;
+
 // case 6 function.
 void MakeASquare(string symbol,int row, int colu)
 {
@@ -14,6 +15,7 @@ void MakeASquare(string symbol,int row, int colu)
 		cout << "\n";
 	}
 }
+
 // case 7 function
 int result = 0;
 void CubeIt(int number)
@@ -21,6 +23,7 @@ void CubeIt(int number)
 	result = number * number * number;
 	cout << result;
 }
+
 // case 8 function
 int preresult, result2, x = 1;
 void FactorialIt(int number)
@@ -30,6 +33,52 @@ void FactorialIt(int number)
 		x = x * i;
 	}
 	cout << x;
+}
+
+// case 9 function
+const int row = 5;
+const int col = 5;
+int mr[row][col];
+int k = 0, babaika = 0;
+void MM()
+{
+	srand(time(NULL));
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			k++;
+			mr[i][j] = 30 + rand() % 31;
+			cout << mr[i][j] << " ";
+			if (k == 5)
+			{
+				cout << "\n";
+				k = 0;
+			}
+		}
+	}
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			if (babaika < mr[i][j])
+			{
+				babaika = mr[i][j];
+			}
+		}
+	}
+	cout << "Максимальное: " << babaika << "\n";
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			if (babaika > mr[i][j])
+			{
+				babaika = mr[i][j];
+			}
+		}
+	}
+	cout << "Минимальное: " << babaika;
 }
 
 int main()
@@ -296,6 +345,11 @@ int main()
 		break;
 	case 8: // Функция которая находит факториал числа.
 		FactorialIt(4);
+		break;
+
+	case 9:
+		MM();
+
 		break;
 	case 1000: // Заданы три сопротивлении R1, R2, R3. Вычислить значение сопротивления R0 по формуле: 1/R0 = 1 / R1 + 1 / R2 + 1 / R3. Контрольный пример : R1 = 2, R2 = 4, R3 = 8, R0 = 1.142857.
 		cout << "Введите R1: ";
