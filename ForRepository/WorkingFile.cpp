@@ -440,7 +440,7 @@ int main()
 
 		break;
 	default:
-		cout << "Такого задания не существует! Прочтите README в репозитории! (https://github.com/PACKLO/Work)";
+		cout << "Такого задания не существует! Прочтите README в репозитории! (https://github.com/Skibly/Work)";
 		break;
 	}
 	return 0;
